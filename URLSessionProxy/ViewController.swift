@@ -7,13 +7,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, ViewModelDelegate {
+    private let viewModel = ViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        viewModel.viewDidLoad()
     }
-
-
+    
+    func reloadPosts() {
+        
+    }
+    
+    func reloadSearchResults() {
+        
+    }
+    
+    func handleLogoutResult(didLogoutSuccessfully: Bool) {
+        
+    }
 }
 

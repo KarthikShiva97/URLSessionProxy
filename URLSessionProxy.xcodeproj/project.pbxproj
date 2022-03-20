@@ -14,19 +14,15 @@
 		E728BFB427E759E60031C3D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E728BFB327E759E60031C3D7 /* Assets.xcassets */; };
 		E728BFB727E759E60031C3D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E728BFB527E759E60031C3D7 /* LaunchScreen.storyboard */; };
 		E728BFC227E759E60031C3D7 /* URLSessionProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728BFC127E759E60031C3D7 /* URLSessionProxyTests.swift */; };
-		E728BFCC27E759E60031C3D7 /* URLSessionProxyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728BFCB27E759E60031C3D7 /* URLSessionProxyUITests.swift */; };
-		E728BFCE27E759E60031C3D7 /* URLSessionProxyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728BFCD27E759E60031C3D7 /* URLSessionProxyUITestsLaunchTests.swift */; };
+		E728BFDB27E75A160031C3D7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728BFDA27E75A160031C3D7 /* ViewModel.swift */; };
+		E728BFDD27E75A2F0031C3D7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728BFDC27E75A2F0031C3D7 /* Model.swift */; };
+		E728BFDF27E75A4B0031C3D7 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728BFDE27E75A4B0031C3D7 /* NetworkLayer.swift */; };
+		E728BFE127E75AD00031C3D7 /* URLSessionProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728BFE027E75AD00031C3D7 /* URLSessionProxy.swift */; };
+		E728BFE327E75B440031C3D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728BFE227E75B440031C3D7 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E728BFBE27E759E60031C3D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E728BF9F27E759E40031C3D7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E728BFA627E759E40031C3D7;
-			remoteInfo = URLSessionProxy;
-		};
-		E728BFC827E759E60031C3D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E728BF9F27E759E40031C3D7 /* Project object */;
 			proxyType = 1;
@@ -46,9 +42,11 @@
 		E728BFB827E759E60031C3D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E728BFBD27E759E60031C3D7 /* URLSessionProxyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLSessionProxyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E728BFC127E759E60031C3D7 /* URLSessionProxyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProxyTests.swift; sourceTree = "<group>"; };
-		E728BFC727E759E60031C3D7 /* URLSessionProxyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLSessionProxyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E728BFCB27E759E60031C3D7 /* URLSessionProxyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProxyUITests.swift; sourceTree = "<group>"; };
-		E728BFCD27E759E60031C3D7 /* URLSessionProxyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProxyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E728BFDA27E75A160031C3D7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E728BFDC27E75A2F0031C3D7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E728BFDE27E75A4B0031C3D7 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		E728BFE027E75AD00031C3D7 /* URLSessionProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProxy.swift; sourceTree = "<group>"; };
+		E728BFE227E75B440031C3D7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +64,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E728BFC427E759E60031C3D7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +72,6 @@
 			children = (
 				E728BFA927E759E40031C3D7 /* URLSessionProxy */,
 				E728BFC027E759E60031C3D7 /* URLSessionProxyTests */,
-				E728BFCA27E759E60031C3D7 /* URLSessionProxyUITests */,
 				E728BFA827E759E40031C3D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +81,6 @@
 			children = (
 				E728BFA727E759E40031C3D7 /* URLSessionProxy.app */,
 				E728BFBD27E759E60031C3D7 /* URLSessionProxyTests.xctest */,
-				E728BFC727E759E60031C3D7 /* URLSessionProxyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,10 +91,15 @@
 				E728BFAA27E759E40031C3D7 /* AppDelegate.swift */,
 				E728BFAC27E759E40031C3D7 /* SceneDelegate.swift */,
 				E728BFAE27E759E40031C3D7 /* ViewController.swift */,
+				E728BFDA27E75A160031C3D7 /* ViewModel.swift */,
+				E728BFDE27E75A4B0031C3D7 /* NetworkLayer.swift */,
+				E728BFE027E75AD00031C3D7 /* URLSessionProxy.swift */,
+				E728BFDC27E75A2F0031C3D7 /* Model.swift */,
+				E728BFE227E75B440031C3D7 /* Extensions.swift */,
+				E728BFB827E759E60031C3D7 /* Info.plist */,
 				E728BFB027E759E40031C3D7 /* Main.storyboard */,
 				E728BFB327E759E60031C3D7 /* Assets.xcassets */,
 				E728BFB527E759E60031C3D7 /* LaunchScreen.storyboard */,
-				E728BFB827E759E60031C3D7 /* Info.plist */,
 			);
 			path = URLSessionProxy;
 			sourceTree = "<group>";
@@ -116,15 +110,6 @@
 				E728BFC127E759E60031C3D7 /* URLSessionProxyTests.swift */,
 			);
 			path = URLSessionProxyTests;
-			sourceTree = "<group>";
-		};
-		E728BFCA27E759E60031C3D7 /* URLSessionProxyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E728BFCB27E759E60031C3D7 /* URLSessionProxyUITests.swift */,
-				E728BFCD27E759E60031C3D7 /* URLSessionProxyUITestsLaunchTests.swift */,
-			);
-			path = URLSessionProxyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +150,6 @@
 			productReference = E728BFBD27E759E60031C3D7 /* URLSessionProxyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E728BFC627E759E60031C3D7 /* URLSessionProxyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E728BFD727E759E60031C3D7 /* Build configuration list for PBXNativeTarget "URLSessionProxyUITests" */;
-			buildPhases = (
-				E728BFC327E759E60031C3D7 /* Sources */,
-				E728BFC427E759E60031C3D7 /* Frameworks */,
-				E728BFC527E759E60031C3D7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E728BFC927E759E60031C3D7 /* PBXTargetDependency */,
-			);
-			name = URLSessionProxyUITests;
-			productName = URLSessionProxyUITests;
-			productReference = E728BFC727E759E60031C3D7 /* URLSessionProxyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +164,6 @@
 						CreatedOnToolsVersion = 13.2;
 					};
 					E728BFBC27E759E60031C3D7 = {
-						CreatedOnToolsVersion = 13.2;
-						TestTargetID = E728BFA627E759E40031C3D7;
-					};
-					E728BFC627E759E60031C3D7 = {
 						CreatedOnToolsVersion = 13.2;
 						TestTargetID = E728BFA627E759E40031C3D7;
 					};
@@ -221,7 +184,6 @@
 			targets = (
 				E728BFA627E759E40031C3D7 /* URLSessionProxy */,
 				E728BFBC27E759E60031C3D7 /* URLSessionProxyTests */,
-				E728BFC627E759E60031C3D7 /* URLSessionProxyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,13 +206,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E728BFC527E759E60031C3D7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,9 +213,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E728BFDF27E75A4B0031C3D7 /* NetworkLayer.swift in Sources */,
+				E728BFDD27E75A2F0031C3D7 /* Model.swift in Sources */,
 				E728BFAF27E759E40031C3D7 /* ViewController.swift in Sources */,
+				E728BFE327E75B440031C3D7 /* Extensions.swift in Sources */,
 				E728BFAB27E759E40031C3D7 /* AppDelegate.swift in Sources */,
+				E728BFDB27E75A160031C3D7 /* ViewModel.swift in Sources */,
 				E728BFAD27E759E40031C3D7 /* SceneDelegate.swift in Sources */,
+				E728BFE127E75AD00031C3D7 /* URLSessionProxy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +232,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E728BFC327E759E60031C3D7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E728BFCE27E759E60031C3D7 /* URLSessionProxyUITestsLaunchTests.swift in Sources */,
-				E728BFCC27E759E60031C3D7 /* URLSessionProxyUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +239,6 @@
 			isa = PBXTargetDependency;
 			target = E728BFA627E759E40031C3D7 /* URLSessionProxy */;
 			targetProxy = E728BFBE27E759E60031C3D7 /* PBXContainerItemProxy */;
-		};
-		E728BFC927E759E60031C3D7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E728BFA627E759E40031C3D7 /* URLSessionProxy */;
-			targetProxy = E728BFC827E759E60031C3D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -524,40 +470,6 @@
 			};
 			name = Release;
 		};
-		E728BFD827E759E60031C3D7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.karthikShiva.URLSessionProxyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = URLSessionProxy;
-			};
-			name = Debug;
-		};
-		E728BFD927E759E60031C3D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.karthikShiva.URLSessionProxyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = URLSessionProxy;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -584,15 +496,6 @@
 			buildConfigurations = (
 				E728BFD527E759E60031C3D7 /* Debug */,
 				E728BFD627E759E60031C3D7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E728BFD727E759E60031C3D7 /* Build configuration list for PBXNativeTarget "URLSessionProxyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E728BFD827E759E60031C3D7 /* Debug */,
-				E728BFD927E759E60031C3D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
